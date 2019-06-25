@@ -8,3 +8,6 @@
 *.pyc
 
 *.sqlite3
+
+migrations
+migrations/*
