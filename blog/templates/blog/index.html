@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+
+{% block title %}Список постов{% endblock %}
+
+
+{% block content %}
+<h1 class="title" style="padding-top: 1rem;">Posts:</h1>
+{% for post in page_object.object_list %}
+    {% include 'blog/includes/post_card_template.html' %}
+{% endfor %}
+
+{% endblock %}
